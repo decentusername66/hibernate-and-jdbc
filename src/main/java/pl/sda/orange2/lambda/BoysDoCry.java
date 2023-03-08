@@ -1,5 +1,5 @@
 package pl.sda.orange2.lambda;
 
-public interface BoysBoCry {
+public interface BoysDoCry {
     void sinoreki();
 }
