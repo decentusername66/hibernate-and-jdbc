@@ -5,7 +5,7 @@ public class LambdaExercises {
 
         BoysDoCry boysDoCry = new ChlopaiTezPlacza();
         boysDoCry.sinoreki();
-        ((ChlopaiTezPlacza)boysDoCry).sing();
+        ((ChlopaiTezPlacza) boysDoCry).sing();
 
         ChlopaiTezPlacza boysBoCry2 = new ChlopaiTezPlacza();
         boysBoCry2.sing();
@@ -19,5 +19,15 @@ public class LambdaExercises {
         };
         anonymousClassReference.sinoreki();
 
+        BoysDoCry firstLambda = () -> {
+        };
+        BoysDoCry secondLambda = () -> System.out.println("Lambda!!");
+        secondLambda.sinoreki();
+
+        BoysDoCry thirdLambda = () -> {
+            System.out.println("First instruction in thirdLambda");
+            System.out.println("Secound instruction in thirdLambda");
+        };
+        thirdLambda.sinoreki();
     }
 }
