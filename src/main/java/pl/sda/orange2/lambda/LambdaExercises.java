@@ -29,5 +29,14 @@ public class LambdaExercises {
             System.out.println("Secound instruction in thirdLambda");
         };
         thirdLambda.sinoreki();
+
+        System.out.println("___________coffee time____________");
+        CoffeeMaker myCoffee = (int water, String coffeeType) -> {
+            System.out.println("Coffee brewing");
+            return "my coffee";
+        };
+        CoffeeMaker shortVersion = (water, coffeeType) -> "my new coffee";
+        shortVersion.prepare(3,"latte");
+
     }
 }
