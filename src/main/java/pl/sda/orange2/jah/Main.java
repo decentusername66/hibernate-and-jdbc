@@ -3,6 +3,6 @@ package pl.sda.orange2.jah;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Działa...");
-        System.out.println("JDBC and Hibernate... love it!");
+        System.out.println("JDBC and Hibernate... love it!!");
     }
 }
