@@ -31,12 +31,20 @@ public class LambdaExercises {
         thirdLambda.sinoreki();
 
         System.out.println("___________coffee time____________");
-        CoffeeMaker myCoffee = (int water, String coffeeType) -> {
-            System.out.println("Coffee brewing");
+
+        CoffeeMaker myCoffeeMaker = (int water, String coffeeType) -> {
             return "my coffee";
         };
+        CoffeeMaker myCoffeeMaker2 = (int water, String coffeeType) -> "my coffee";
+        CoffeeMaker myCoffeeMaker3 = (int water, String coffeeType) -> {
+            System.out.println("brewing...");
+            return "flat white";
+        };
+        String myCoffee = myCoffeeMaker3.prepare(4, "white flat");
+        System.out.println("my coffee is ready: " + myCoffee);
+
         CoffeeMaker shortVersion = (water, coffeeType) -> "my new coffee";
-        shortVersion.prepare(3,"latte");
+        shortVersion.prepare(3, "latte");
 
     }
 }
